@@ -39,14 +39,5 @@ controller.topCharacters = async (req, res) => {
   })
 };
 
-controller.delete = (req, res) => {
-  const { id } = req.params;
-  req.getConnection((err, connection) => {
-    connection.query('DELETE FROM products WHERE id = ?', [id], (err, rows) => {
-      res.redirect('/');
-    });
-  });
-}
-
 
 module.exports = controller;
