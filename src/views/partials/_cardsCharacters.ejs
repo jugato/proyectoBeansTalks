@@ -1,0 +1,28 @@
+<% for(var i=0; i < data.length; i++) { %>
+    <div class="col-md-6">
+      <div class="card mb-3" style="max-width: 540px; height: 500px;">
+        <div class="row g-0 overflow-auto">
+          <div class="col-md-4">
+            <img src="<%= data[i].images.jpg.image_url%>" class="img-fluid rounded-start rounded" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                <%= data[i].name %>
+              </h5>
+              <p class="card-text">
+                <%= data[i].about %>
+              </p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+              <a href="<%= data[i].url %>" class="link-info" target="_blank">Mas informacion</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% } %>

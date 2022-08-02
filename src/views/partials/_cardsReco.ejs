@@ -1,0 +1,27 @@
+<% for(var i=0; i < data.length; i++) { %>
+  <div class="container">
+    <div class="card mb-3 mx-auto" style="width: 900px">
+      <div class="row mx-auto m-4">
+        <div class="col-md-6">
+          <img src=" <%= data[i].entry[0].images.jpg.image_url %> " class="card-img-top rounded" alt="anime" height="300"
+            width="200">
+        </div>
+        <div class="col-md-6">
+          <img src=" <%= data[i].entry[1].images.jpg.image_url %> " class="card-img-top rounded" alt="anime" height="300"
+            width="200">
+        </div>
+      </div>
+
+      <div class="card-body">
+        <h5 class="card-title text-center">
+          <%= data[i].entry[0].title %> ---VS--- <%= data[i].entry[1].title %>
+        </h5>
+        <p class="card-text text-center">
+          <%= data[i].content %>
+        </p>
+        <p class="card-text"><small class="text-muted">by: <%= data[i].user.username %> </small></p>
+      </div>
+    </div>
+  </div>
+
+  <% } %>
