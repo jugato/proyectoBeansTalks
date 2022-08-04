@@ -1,0 +1,14 @@
+.cardStyle {
+    overflow: auto;
+}
+
+.cardStyle::-webkit-scrollbar {
+    width: 12px;
+    background: #efefef;
+}
+
+.cardStyle::-webkit-scrollbar-thumb {
+    height: 2px;
+    background: #eccbab;
+    border-radius: 5px;
+}
